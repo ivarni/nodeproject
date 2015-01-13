@@ -1,0 +1,2 @@
+require('./greeter').greet();
+

@@ -1,0 +1,26 @@
+{
+  "name": "matbasen",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivarni/matbasen.git"
+  },
+  "author": "Ivar Nilsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivarni/matbasen/issues"
+  },
+  "homepage": "https://github.com/ivarni/matbasen",
+  "devDependencies": {
+    "connect-livereload": "^0.5.2",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.2.1",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express-server": "^0.4.19",
+    "grunt-parallel": "^0.3.1"
+  },
+  "dependencies": {
+    "express": "^4.10.7"
+  }
+}
