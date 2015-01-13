@@ -13,7 +13,9 @@ To install dependencies, run `npm install`
 To spin up a server for development, run `grunt server`
 
 Any changes to javascript files in the `src/js` folder will make the browser reload itself
+
 Any changes to less files in the `src/less` folder will make the browser reload itself
+
 Any changes to javascript files in the `server` folder will restart express
 
 When in production, make sure `NODE_ENV` is set correctly unless for some reason you actually want livereloading
