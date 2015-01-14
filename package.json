@@ -1,16 +1,16 @@
 {
-  "name": "matbasen",
+  "name": "nodeproject",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ivarni/matbasen.git"
+    "url": "https://github.com/ivarni/nodeproject.git"
   },
   "author": "Ivar Nilsen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ivarni/matbasen/issues"
+    "url": "https://github.com/ivarni/nodeproject/issues"
   },
-  "homepage": "https://github.com/ivarni/matbasen",
+  "homepage": "https://github.com/ivarni/nodeproject",
   "devDependencies": {
     "connect-livereload": "^0.5.2",
     "grunt": "^0.4.5",
