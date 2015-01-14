@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         },
 
         browserify: {
-            dist: {
+            dev: {
                 src: './src/js/app.js',
                 dest: 'public/app.js',
                 options: {
@@ -24,6 +24,10 @@ module.exports = function(grunt) {
                         debug: true
                     }
                 }
+            },
+            dist: {
+                src: './src/js/app.js',
+                dest: 'public/app.js'
             }
         },
 
@@ -36,6 +40,14 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'public/app.css': 'src/less/styles.less'
+                }
+            }
+        },
+
+        uglify: {
+            dist: {
+                files: {
+                    'public/app.js': ['./public/app.js']
                 }
             }
         },
@@ -97,7 +109,7 @@ module.exports = function(grunt) {
                     },
                     {
                         grunt: true,
-                        args: ['browserify']
+                        args: ['browserify:dev']
                     }
                 ]
             }
@@ -109,11 +121,16 @@ module.exports = function(grunt) {
         'parallel:web'
     ]);
 
+    grunt.registerTask('dist', [
+        'browserify:dist', 'less', 'uglify'
+    ]);
+
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-express-server');
     grunt.loadNpmTasks('grunt-parallel');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
 }
