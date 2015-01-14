@@ -19,7 +19,10 @@ module.exports = function(grunt) {
                 dest: 'public/app.js',
                 options: {
                     watch: true,
-                    keepAlive: true
+                    keepAlive: true,
+                    browserifyOptions: {
+                        debug: true
+                    }
                 }
             }
         },
