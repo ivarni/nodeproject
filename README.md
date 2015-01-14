@@ -19,3 +19,7 @@ When in production, make sure `NODE_ENV` is set correctly unless for some reason
 ## Notes about Growl
 The Growl client should be installed (and running) and `growlnotify` must be on PATH.
 
+## TODO
+* Minify javascript in production
+* Run JSHint
+* Run tests
