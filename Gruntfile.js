@@ -18,7 +18,8 @@ module.exports = function(grunt) {
                 src: './src/js/app.js',
                 dest: 'public/app.js',
                 options: {
-                    watch: true
+                    watch: true,
+                    keepAlive: true
                 }
             }
         },
@@ -90,6 +91,10 @@ module.exports = function(grunt) {
                     {
                         grunt: true,
                         args: ['watch:less']
+                    },
+                    {
+                        grunt: true,
+                        args: ['browserify']
                     }
                 ]
             }
@@ -98,7 +103,7 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('server', [
-        'browserify','parallel:web'
+        'parallel:web'
     ]);
 
     grunt.loadNpmTasks('grunt-browserify');
