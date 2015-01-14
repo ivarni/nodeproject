@@ -7,15 +7,15 @@ The setup includes
 * Node Express for the server side
 * Connect livereload middleware when in development
 * Less for CSS
+* Growl support for notifications when something fails
 
-To install dependencies, run `npm install`
+1) To install dependencies, run `npm install`
+2) To spin up a server for development, run `grunt server`
+3) Any changes to source files will make the browser reload itself
 
-To spin up a server for development, run `grunt server`
-
-Any changes to javascript files in the `src/js` folder will make the browser reload itself
-
-Any changes to less files in the `src/less` folder will make the browser reload itself
-
-Any changes to javascript files in the `server` folder will restart express
-
+## Notes about livereload
 When in production, make sure `NODE_ENV` is set correctly unless for some reason you actually want livereloading
+
+## Notes about Growl
+The Growl client should be installed (and running) and `growlnotify` must be on PATH.
+
