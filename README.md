@@ -9,9 +9,9 @@ The setup includes
 * Less for CSS
 * Growl support for notifications when something fails
 
-1) To install dependencies, run `npm install`
-2) To spin up a server for development, run `grunt server`
-3) Any changes to source files will make the browser reload itself
+1. To install dependencies, run `npm install`
+2. To spin up a server for development, run `grunt server`
+3. Any changes to source files will make the browser reload itself
 
 ## Notes about livereload
 When in production, make sure `NODE_ENV` is set correctly unless for some reason you actually want livereloading
